@@ -16,5 +16,9 @@ class Patient:
         )
         return age
 
+    @classmethod
+    def new(cls, name, date_of_birth, phone_number):
+        return cls(None, name, date_of_birth, phone_number)
+
     def __repr__(self):
         return f"{self.name} ({self.age} years old)"
